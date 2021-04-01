@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+:root {
+  --blue: #eaf0f8;
+}
+
+body {
+  margin: 0;
+  background: #121F3D;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 119px 340px 150px 130px;
+  grid-template-columns: 414px;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header p{
+  font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 56px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+  color: #91C93D;
+  text-shadow: 0px 5px 4px rgba(165, 160, 160, 0.5);
+}
+
+/* .cards{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  flex-grow: 0;
+  gap: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+} */
+
+.cards{
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.cards article{
+  scroll-snap-align: center;
+  margin: 0px 15px;
+  min-width:260px;
+  height:285px;
+  border-radius: 30px;
+  background: #24385B;
+  box-shadow:  10px 10px 10px #070c18,
+  -10px -10px 10px #1d3262;
+  background-image: url("../src/images/2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.progress-bar{
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 20px 20px 70px 20px;
+}
+.progress-bar .song-name{
+  font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: rgba(145, 201, 61, 0.8);
+}
+
+.progress-bar .song-autor{
+  font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: rgba(145, 201, 61, 0.50);
+}
+
+.progress-bar .song-track{
+  align-self: end;
+  width: 353px;
+border: 3px solid #24385B;
+border-radius: 10px;
+}
+
+.progress-bar .song-status{
+  width: 200px;
+  border: 5px solid #74CAFF;
+  border-radius: 5px 0px 0px 5px;
+filter: blur(0.5px);
+}
+.progress-bar .container-time{
+  margin-top: 5px;
+display: flex;
+justify-content: space-between;
+}
+.progress-bar .time{
+  font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #74CAFF;
+}
+.progress-bar .container-time .time-status{
+  margin-left: -10px;
+}
+
+footer{
+ margin-top: 30px auto;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+footer a{
+  cursor: pointer;
+  box-shadow: 0px 15px 4px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
+}
+footer a:hover{
+    box-shadow: inset 0px 15px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+footer .main-button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #74CAFF;
+}
+footer .sec-button{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #24385B;
+}
+
+footer .shuffle{
+    background-image: url("../src/icons/Shuffle.png");
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+footer .previous{
+    background-image: url("../src/icons/previous.png");
+    background-position: 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+footer .play-pause{
+    background-image: url("../src/icons/play.png");
+    background-position: 30px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+footer .play-pause:active {
+    background-image: url("../src/icons/Pause.png");
+    background-position: 25px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+footer .next-fast{
+    background-image: url("../src/icons/next-fast.png");
+    background-position: 13px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+footer .repeat{
+    background-image: url("../src/icons/Repeat.png");
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+
+
+
